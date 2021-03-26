@@ -9,6 +9,7 @@ var imgStyle = {
 };
 
 export default function App(props){
+
   const [loginMessage, setLoginMessage] = useState(null); //estado y variables de estado
   const responseGoogleSuccess = (googleUser) => {
     var profile = googleUser.getBasicProfile();

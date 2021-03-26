@@ -49,7 +49,7 @@ export default function PostList(){
                                 <Col xs="2"><BsUpload/></Col>
                               </Row>
                             </Col>
-                            <Col align="right">  //la fecha 
+                            <Col align="right">  
                               <small>{getDateInStrFormat(new Date(post.publicationdate))}</small>
                             </Col>
                           </Row>
