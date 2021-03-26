@@ -3,16 +3,16 @@ import { Navbar, NavbarBrand, Nav, NavItem, Media, Row, Col, Container, Alert } 
 import PostList from './posts/PostList'; //postlist muestra la lista de post xdd obvio
 import { GoogleLogin } from 'react-google-login'; //autenticacion de google
 import config from '../config.js';
-import MyPlaceBird from '../images/bird.png';
+import MyPlaceBird from '../images/bird_fake_twitter.png';
 var imgStyle = {
   maxWidth: "85px",
 };
 
 export default function App(props){
-  const [loginMessage, setLoginMessage] = useState(null);
+  const [loginMessage, setLoginMessage] = useState(null); //estado y variables de estado
   const responseGoogleSuccess = (googleUser) => {
     var profile = googleUser.getBasicProfile();
-    sessionStorage.setItem('name', profile.getName());
+    sessionStorage.setItem('name', profile.getName()); //creas una sesion mientras que esta logeado
     sessionStorage.setItem('email', profile.getEmail());
     sessionStorage.setItem('image', profile.getImageUrl());
     
@@ -36,7 +36,7 @@ export default function App(props){
                   clientId={config.clientID}
                   buttonText="Login with Google"
                   theme='dark'
-                  onSuccess={responseGoogleSuccess} //propiedades asociadas a funciones
+                  onSuccess={responseGoogleSuccess} //propiedades o atributos asociadas a funciones
                   onFailure={responseGoogleFailure}
                 />
               </NavItem>
