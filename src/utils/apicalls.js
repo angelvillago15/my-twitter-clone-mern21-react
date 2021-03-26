@@ -1,9 +1,5 @@
 import API from './api';
 
-export {
-    getAllPosts
-}
-
 function getAllPosts() {
     return API.get('/posts').then(res => res.data);
   }
@@ -11,6 +7,11 @@ function getAllPosts() {
   function getMyPosts(email) {
     return API.get('/posts/all/'+email).then(res => res.data);
   }
+
+  function deletePost(idpost) {
+    return API.delete('/posts/'+idpost).then(result => result.data);
+  }
+  
 
   function postNewPost(email, user, image, message) {
     return API.post('/posts', {
@@ -24,3 +25,12 @@ function getAllPosts() {
     return API.put('/posts/'+idpost, {
       message}).then(result => result.data);
   }
+
+  export {
+    getAllPosts, 
+    getMyPosts,
+    deletePost,
+    postNewPost,
+    putExistingPost
+}
+

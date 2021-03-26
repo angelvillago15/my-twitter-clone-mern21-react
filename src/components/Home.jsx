@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {Container, Row, Col } from 'reactstrap';
 
-import HeaderDashboard from './HeaderDashboard';
-import MyPostList from './posts/MyPostList';
-import PostList from './posts/PostList';
+import HeaderDashboard from './HeaderDashBoard';
+import MyPostList from './post/MyPostList';
+import PostList from './post/PostList';
 
 export default function Home(props){
 

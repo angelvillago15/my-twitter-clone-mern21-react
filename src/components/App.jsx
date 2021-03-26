@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, Media, Row, Col, Container, Alert } from 'reactstrap'; //componentes de reactstrap
-import PostList from './posts/PostList'; //postlist muestra la lista de post xdd obvio
+import PostList from './post/PostList'; //postlist muestra la lista de post xdd obvio
 import { GoogleLogin } from 'react-google-login'; //autenticacion de google
 import config from '../config.js';
 import MyPlaceBird from '../images/bird_fake_twitter.png';

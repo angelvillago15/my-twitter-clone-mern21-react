@@ -14,7 +14,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(<HashRouter>
   <div>
     <Route exact path="/" component={App} />
-    <Route path="/home" component={home} />
+    <Route path="/home" component={Home} />
   </div>
 </HashRouter >, document.getElementById('root'));
 
