@@ -29,7 +29,7 @@ export default function Home(props){
     return (
       <Container>
         <Row>
-          <Col><HeaderDashboard onLogout={handleLogout} onShow= {handleOnShow} /></Col> //se ejecuta el logout
+          <Col><HeaderDashboard onLogout={handleLogout} onShow= {handleOnShow} /></Col> 
         </Row>
         <Row>
           <Col xs="12">
