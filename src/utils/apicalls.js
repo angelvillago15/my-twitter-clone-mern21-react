@@ -1,4 +1,11 @@
 import API from './api';
+export {
+  getAllPosts, 
+  getMyPosts,
+  deletePost,
+  postNewPost,
+  putExistingPost
+}
 
 function getAllPosts() {
     return API.get('/posts').then(res => res.data);
@@ -26,11 +33,5 @@ function getAllPosts() {
       message}).then(result => result.data);
   }
 
-  export {
-    getAllPosts, 
-    getMyPosts,
-    deletePost,
-    postNewPost,
-    putExistingPost
-}
+
 

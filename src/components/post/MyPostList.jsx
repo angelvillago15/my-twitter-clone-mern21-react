@@ -44,7 +44,7 @@ export default function MyPostList(props){
       <Modal isOpen="true" className={props.className}>
         <ModalHeader>Eliminar post</ModalHeader>
         <ModalBody>
-          Se va a eliminar el post:<br/><small><strong>{post.message}</strong></small> //valores-atriburos del post
+          Se va a eliminar el post:<br/><small><strong>{post.message}</strong></small> 
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={() => deletePostSel(post)}>Eliminar</Button>{' '}
@@ -85,7 +85,7 @@ export default function MyPostList(props){
       {showDeleteModal}
       <Row>
         <Col xs="7">
-          <CardTitle tag="center"><Alert color="primary"><strong>Mis Posts publicados </strong><Badge pill>{posts.length}</Badge></Alert></CardTitle>
+          <CardTitle tag="center"><Alert color="primary"><strong>Mis Posts publicados</strong><Badge pill>{posts.length}</Badge></Alert></CardTitle>
           <Table>
             <tbody>
               { posts.map((post, index) => {
